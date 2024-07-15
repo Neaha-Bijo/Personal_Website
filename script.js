@@ -86,9 +86,13 @@ const textarea = document.querySelector('.contact_info textarea.message');
     
 function messageResize() {
         this.style.height = 'auto';
-        this.style.height = Math.max(this.scrollHeight, 100) + 'px'; // Minimum height of 100px
+        this.style.height = Math.max(this.scrollHeight, 100) + 'px';
     }
     
 textarea.addEventListener('input', autoResize);
     
 messageResize.call(textarea);
+
+function sendMessage() {
+    alert('Your message has been sent to Neaha Bijo.');
+  }
