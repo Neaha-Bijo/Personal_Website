@@ -1,0 +1,34 @@
+  body {
+    margin: 0;
+    padding: 30px;
+    padding-top: 100px;
+    background-color:plum ;
+    color: white;
+    transition: background-color 0.4s;
+    }
+
+  body.toggle-active {
+        background-color: midnightblue; 
+    }
+    
+  body.toggle-active .toggle-image {
+      filter: invert(1);
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .section {
+    display: none;
+    padding-top: 70px; 
+    }
+
+  .section.active {
+    display: block;
+    }

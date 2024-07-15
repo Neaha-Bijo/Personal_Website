@@ -1,0 +1,44 @@
+
+ .about {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   column-gap: 30px;
+ }
+ 
+ .picture {
+   width: 100%;
+   margin-right: 20px; /* Add margin for spacing between picture and text */
+ }
+ 
+ .profile-picture {
+   object-fit: fill;
+   width: 100%;
+   max-width: 250px;
+   border-radius: 10px;
+ }
+ 
+ .about-me-text {
+   text-align: left;
+ }
+ 
+ .profile-name {
+   text-align: center;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   font-size: 3em;
+   padding: 1em;
+}
+ 
+ @media (max-width: 700px) {
+   .about {
+     grid-template-columns: 1fr; /* Single column layout for smaller screens */
+   }
+ 
+   .picture {
+     width: 100%; /* Full width on smaller screens */
+     margin-right: 0; /* No margin on smaller screens */
+     margin-bottom: 20px; /* Add margin at the bottom for spacing */
+   }
+ }
+ 

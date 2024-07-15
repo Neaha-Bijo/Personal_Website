@@ -1,0 +1,96 @@
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-color: white;
+  padding : 2%;
+  width: 30%; /* Set the width to match the input boxes */
+  border-radius: 10px;
+  margin: 2%;
+
+}
+
+.contact_info {
+  display: inline-block;
+  width: auto;
+  margin: 2%;
+}
+
+.contact_info textarea {
+  width: 100%; 
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 5%;
+  border: solid;
+  border-color: white;
+  background-color: rgb(243, 242, 242);
+}
+
+.contact_info textarea.message {
+  height: 100px;
+  resize: vertical; 
+
+}
+
+.send-message {
+  background-color: plum;
+  border-radius: 10px;
+  border: solid;
+  border-color: white;
+  height: 30px;
+  width: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.15s, background-color 0.4s;
+  cursor: pointer;
+  margin: 2%;
+}
+
+.send-message img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  color: white;
+}
+
+.send-message:hover {
+  box-shadow: 0 10px 10px rgb(153, 153, 153);
+}
+
+.send-message:active {
+  box-shadow: none;
+}
+
+.send-message.active {
+  background-color: midnightblue;
+}
+
+.toggle-image {
+  transition: filter 0.4s;
+}
+
+.contact_links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.contact_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact_link img {
+  width: 50px; 
+  height: 50px;
+  margin-bottom: 0.5rem;
+
+}
+
+.contact_link div {
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,16 @@
+.resume {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding: 10px;
+    border: solid;
+    border-color: white;
+    border-radius: 10px;
+    background-color: rgb(213, 212, 212);
+}
+
+.resume img {
+    width: 1em;
+    height: 1em;
+    margin-left: 5px;
+}

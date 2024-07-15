@@ -1,0 +1,29 @@
+.exp {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+}
+.experience {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+    flex-wrap: wrap;
+}
+
+.GDSC-Open-Source, .Fireball-Forums-Lead, .Alpha-Ori, .GDSC-Workshops-and-Talks {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 10px;
+    border-color: white;
+    padding: 2%;
+    margin: 2%;
+    flex: 1 1 calc(33% - 4%);
+    gap: 1rem;
+}
+
+@media (max-width: 700px) {
+    .GDSC-Open-Source, .Fireball-Forums-Lead, .Alpha-Ori, .GDSC-Workshops-and-Talks {
+        flex: 1 1 100%;
+    }
+}
