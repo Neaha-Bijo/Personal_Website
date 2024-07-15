@@ -311,21 +311,54 @@
         on this personal protfolio.
       </div>
 
-      <div class="contact-box">
+      <form
+        class="contact-box"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        id="form"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="05fce305-8591-42b8-a189-b1a400ac5c6f"
+        />
         <div class="contact_info">
-          <textarea placeholder="Name"></textarea>
+          <input
+            class="info"
+            placeholder="Your Name"
+            type="text"
+            name="name"
+            required
+          />
         </div>
 
         <div class="contact_info">
-          <textarea placeholder="Email"></textarea>
+          <input
+            class="info"
+            placeholder="Your Email"
+            type="email"
+            name="email"
+            required
+          />
         </div>
 
         <div class="contact_info">
-          <textarea class="message" placeholder="Message"></textarea>
+          <textarea
+            class="message"
+            placeholder="Your Message"
+            name="message"
+          ></textarea>
         </div>
+
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
 
         <div>
-          <button class="send-message" onclick="sendMessage()">
+          <button class="send-message" type="submit">
             <img
               class="toggle-image"
               src="images/sendicon.JPG"
@@ -333,7 +366,9 @@
             />
           </button>
         </div>
-      </div>
+
+        <div id="result"></div>
+      </form>
 
       <div class="contact_methods">
         <p>Here are other methods to get in touch with me.</p>

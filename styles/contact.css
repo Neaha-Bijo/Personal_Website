@@ -16,7 +16,7 @@
   margin: 2%;
 }
 
-.contact_info textarea {
+.info, .contact_info textarea {
   width: 100%; 
   box-sizing: border-box;
   border-radius: 10px;
