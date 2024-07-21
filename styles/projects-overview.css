@@ -130,6 +130,11 @@
     row-gap: 5%;
 }
 
+.project_desc .skills img {
+    width: 30px;
+    height: 30px;
+  }
+  
 @media (max-width: 750px) {
     .slider-container {
         height: 60rem;
