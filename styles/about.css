@@ -7,10 +7,10 @@
  
  .picture {
    width: 100%;
-   margin-right: 20px; /* Add margin for spacing between picture and text */
+   margin-right: 20px;
  }
  
- .profile-picture {
+ .picture img{
    object-fit: fill;
    width: 100%;
    max-width: 250px;
@@ -32,13 +32,13 @@
  
  @media (max-width: 700px) {
    .about {
-     grid-template-columns: 1fr; /* Single column layout for smaller screens */
+     grid-template-columns: 1fr;
    }
  
    .picture {
-     width: 100%; /* Full width on smaller screens */
-     margin-right: 0; /* No margin on smaller screens */
-     margin-bottom: 20px; /* Add margin at the bottom for spacing */
+     width: 100%;
+     margin-right: 0;
+     margin-bottom: 20px;
    }
  }
  
